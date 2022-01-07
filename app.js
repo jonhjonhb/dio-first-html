@@ -4,7 +4,7 @@ switcher.addEventListener('click', function() {
     document.body.classList.toggle('dark-theme')
     var className = document.body.className;
     if(className == "Light-theme"){
-        this.textContent = "Modo escuro";
+        this.textContent = "Modo Escuro";
     }
     else{
         this.textContent = "Modo Claro";
