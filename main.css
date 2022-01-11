@@ -1,6 +1,11 @@
 body {
     background: var(--bg);
 }
+h1 {
+  text-align: center;
+  position: relative;
+  top: 25px;
+}
 ul {
     font-family: helvetica;
 }
@@ -9,23 +14,27 @@ li {
 }    
 .list {
     list-style: square;
+    padding-bottom: 15px;
+    height: 130px;
+    width: 900px;
 }
 .light-theme {
-    --bg: var(--red);
+    --bg: var(--blue);
     --fontColor: var(--black);
     --btnBg: var(--black);
     --btnFontColor: var(--white);
 }
 .dark-theme {
-    --bg: var(--black);
-    --fontColor: var(--red);
-    --btnBg: var(--white);
+    --bg: var(--blue);
+    --fontColor: var(--gray);
+    --btnBg: var(--gray);
     --btnFontColor: var(--black);
 }
 :root{
-    --red: red;
+    --blue: #000021;
     --white: #FFFFFF;
     --black: #000000;
+    --gray: #999999;
 }
 * {
     color: var(--fontColor);
@@ -43,3 +52,22 @@ li {
     border: none;
 }
 .btn:focus { outline-style: none; }
+
+#fotoPerfil {
+    border-radius: 50%;
+    border: solid #505050;
+    position: sticky;
+    left: 55px;
+    height: 150px;
+    width:  150px;
+}
+#biografia{
+    border: solid #404040 0.1px;
+    text-align: justify;
+    position: absolute;
+    padding: 10px 5px 10px 5px;
+    top: 100px;
+    left: 225px;
+    height: 50px;
+    width: 600px;
+}
